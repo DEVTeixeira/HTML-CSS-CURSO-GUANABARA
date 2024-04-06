@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>IMAGENS DINAMICAS</h1>
+    <p>aqui podemos ver varios <b>formatos</b> de <abbr title="CEL,TABLET,TV">imagens</abbr></p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="IMAGENS/p.png" type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="IMAGENS/m.png" type="image/png">
+        <img src="IMAGENS/g.png" alt="imagem flexivel">
+
+    </picture>
+    <h1>ouça essa musica enquanto navegue no site</h1>
+    <audio src="midias/Blues Delight - If I Had Money.mp3" controls autoplay></audio>
+    <!-- FORMATOS DE MP3-->
+    <!-- MP3 WAVE OGG-->
+<audio>
+    <source src="midias/Blues Delight - If I Had Money.mp3" type="audio/mpeg">
+    <p>infelizmente seu navegador não consegue reproduzir áudio mas você pode baixar a partir desse <a href="midias/Blues Delight - If I Had Money.mp3">link</a></p>
+</audio>
+    
+</body>
+</html>
